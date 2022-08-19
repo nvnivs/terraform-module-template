@@ -48,7 +48,9 @@ No resources.
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_name"></a> [name](#input\_name) | An example of a variable. | `string` | `"value"` | no |
 
 ## Outputs
 
