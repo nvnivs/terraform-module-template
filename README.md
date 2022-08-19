@@ -22,6 +22,7 @@ A template to create Terraform module Repositories.
     - Static code analysis with [tfsec]
 * Generates REAMDE module documentation with [terraform-docs]
 * Configures [renovate] for dependency management
+* Actions workflow to test PRs
 * Actions workflow to create Github Releases using [semantic-release]
 
 ## Credits
