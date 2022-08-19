@@ -15,3 +15,12 @@ A template to create Terraform module Repositories.
     - Fixes trailing whitespace
 * Local testing with [pre-commit-terraform]
     - Formats code with `terraform fmt`
+    - Validates code with `terraform validate`
+    - Static code analysis with [checkov]
+    - Static code analysis with [TFLint]
+    - Static code analysis with [tfsec]
+
+
+## Credits
+
+* https://github.com/DontShaveTheYak/terraform-module-template
