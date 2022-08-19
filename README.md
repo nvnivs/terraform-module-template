@@ -7,6 +7,7 @@ A template to create Terraform module Repositories.
 * Local testing with [pre-commit-hooks]
     - Checks for merge conficts
     - Check `yaml` files syntax
+    - Check `json` files syntax
     - Detects AWS credentials
     - Detects private keys
     - Fixes end of files
@@ -20,6 +21,7 @@ A template to create Terraform module Repositories.
     - Static code analysis with [TFLint]
     - Static code analysis with [tfsec]
 * Generates REAMDE module documentation with [terraform-docs]
+* Configures [renovate] for dependency management
 
 ## Credits
 
