@@ -14,7 +14,8 @@ jobs:
         env:
           SKIP: >-
             terraform_checkov,
-            terraform_tflint
+            terraform_tflint,
+            terraform_tfsec
 
   checkov:
     runs-on: ubuntu-latest
@@ -30,3 +31,9 @@ jobs:
       - run: tflint --version
       - run: tflint --init
       - run: tflint -f compact
+
+  tfsec:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.0.2
+      - uses: aquasecurity/tfsec-action@v1.0.2
