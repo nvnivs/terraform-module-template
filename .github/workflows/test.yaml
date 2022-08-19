@@ -13,9 +13,11 @@ jobs:
       - uses: pre-commit/action@v3.0.0
         env:
           SKIP: >-
+            no-commit-to-branch,
             terraform_checkov,
             terraform_tflint,
             terraform_tfsec
+      - uses: stefanzweifel/git-auto-commit-action@v4.14.1
 
   checkov:
     runs-on: ubuntu-latest
