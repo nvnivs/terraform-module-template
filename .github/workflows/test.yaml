@@ -35,4 +35,5 @@ jobs:
 
     - uses: terraform-docs/gh-actions@v1.0.0
       with:
+        working-dir: .
         git-push: true
