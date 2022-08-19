@@ -34,7 +34,8 @@ A template to create Terraform module Repositories.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.0, < 2.0.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.31, < 2.0.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 4.27.0 |
 
 ## Providers
 
@@ -56,5 +57,7 @@ No resources.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_name"></a> [name](#output\_name) | An example of an output. |
 <!-- END_TF_DOCS -->
