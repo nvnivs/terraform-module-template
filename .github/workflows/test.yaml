@@ -37,6 +37,7 @@ jobs:
         with:
           git-push: true
           recursive: false
+          recursive-path: potato
 
   yamllint:
     runs-on: ubuntu-latest
