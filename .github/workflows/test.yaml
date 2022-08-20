@@ -41,3 +41,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3.0.2
       - uses: reviewdog/action-yamllint@v1.6.1
+        with:
+          level: error
