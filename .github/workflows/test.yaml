@@ -1,8 +1,9 @@
+---
 name: Test
 
-on:
+on: # yamllint disable-line rule:truthy
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   checkov:
@@ -29,12 +30,12 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3.0.2
-      with:
-        ref: ${{ github.event.pull_request.head.ref }}
-    - uses: terraform-docs/gh-actions@v1.0.0
-      with:
-        git-push: true
+      - uses: actions/checkout@v3.0.2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: terraform-docs/gh-actions@v1.0.0
+        with:
+          git-push: true
 
   yamllint:
     runs-on: ubuntu-latest
