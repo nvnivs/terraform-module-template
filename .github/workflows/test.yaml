@@ -36,8 +36,6 @@ jobs:
       - uses: terraform-docs/gh-actions@v1.0.0
         with:
           git-push: true
-          recursive: false
-          recursive-path: potato
 
   yamllint:
     runs-on: ubuntu-latest
