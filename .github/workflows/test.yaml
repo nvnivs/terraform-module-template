@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.0.2
-      - uses: bridgecrewio/checkov-action@v12.1767.0
+      - uses: bridgecrewio/checkov-action@v12.1768.0
 
   tflint:
     runs-on: ubuntu-latest
