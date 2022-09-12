@@ -1,7 +1,7 @@
 {
   "extends": [
     "config:base",
-    ":semanticCommitTypeAll(feat)"
+    ":semanticCommitTypeAll(fix)"
   ],
   "pre-commit": {
     "enabled": true
