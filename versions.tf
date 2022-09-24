@@ -1,9 +1,9 @@
 terraform {
   required_providers {
-    # Example of requiring the AWS provider
-    aws = {
-      source  = "hashicorp/aws"
-      version = "4.31.0"
+    # Example of requiring a provider
+    null = {
+      source  = "hashicorp/null"
+      version = "3.1.1"
     }
   }
 
