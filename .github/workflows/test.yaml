@@ -5,6 +5,8 @@ on:  # yamllint disable-line rule:truthy
   pull_request:
     branches: [main]
 
+permissions: read-all
+
 jobs:
   checkov:
     runs-on: ubuntu-latest
