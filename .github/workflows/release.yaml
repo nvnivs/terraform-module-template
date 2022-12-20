@@ -7,8 +7,6 @@ on:  # yamllint disable-line rule:truthy
 
 permissions:
   contents: write
-  issues: write
-  pull-requests: write
 
 jobs:
   release:
