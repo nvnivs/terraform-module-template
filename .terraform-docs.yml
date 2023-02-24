@@ -2,7 +2,7 @@
 formatter: "markdown"
 
 output:
- file: README.md
+  file: README.md
   mode: inject
 
 recursive:
