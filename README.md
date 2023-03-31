@@ -18,10 +18,10 @@ A template to create Terraform module Repositories.
     - Formats code with `terraform fmt`
     - Validates code with `terraform validate`
     - Static code analysis with [checkov]
-    - Static code analysis with [TFLint]
+    - Static code analysis with [tflint]
     - Static code analysis with [tfsec]
 * [Devcontainer] with all dependencies pre-configured
-* Generates REAMDE module documentation with [terraform-docs]
+* Generates README.md module documentation with [terraform-docs]
 * Configures [renovate] for dependency management
 * Actions workflow to test PRs
 * Actions workflow to create Github Releases using [semantic-release]
@@ -62,3 +62,15 @@ No resources.
 |------|-------------|
 | <a name="output_name"></a> [name](#output\_name) | An example of an output. |
 <!-- END_TF_DOCS -->
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[pre-commit-hooks]: https://pre-commit.com/
+[pre-commit-terraform]: https://github.com/antonbabenko/pre-commit-terraform
+[checkov]: https://github.com/bridgecrewio/checkov
+[tflint]: https://github.com/terraform-linters/tflint
+[tfsec]: https://github.com/aquasecurity/tfsec
+[Devcontainer]: https://code.visualstudio.com/docs/devcontainers/containers
+[terraform-docs]: https://github.com/terraform-docs/terraform-docs/
+[renovate]: https://github.com/renovatebot/renovate
+[semantic-release]: https://github.com/semantic-release/semantic-release
