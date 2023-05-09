@@ -1,9 +1,23 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
     ":semanticCommits"
   ],
   "pre-commit": {
     "enabled": true
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "antonbabenko/pre-commit-terraform",
+      ],
+      "matchUpdateTypes": [
+        "chore",
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    }
+  ]
 }
