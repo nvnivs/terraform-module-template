@@ -10,7 +10,7 @@
   "packageRules": [
     {
       "matchPackageNames": [
-        "antonbabenko/pre-commit-terraform",
+        "antonbabenko/pre-commit-terraform"
       ],
       "matchUpdateTypes": [
         "chore",
