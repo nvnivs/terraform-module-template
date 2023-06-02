@@ -10,7 +10,8 @@
   "packageRules": [
     {
       "matchPackageNames": [
-        "antonbabenko/pre-commit-terraform"
+        "antonbabenko/pre-commit-terraform",
+        "terraform-linters/tflint-ruleset-terraform"
       ],
       "matchUpdateTypes": [
         "chore",
