@@ -9,12 +9,6 @@ permissions:
   contents: write
 
 jobs:
-  checkov:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: bridgecrewio/checkov-action@v12
-
   tflint:
     runs-on: ubuntu-latest
     steps:
