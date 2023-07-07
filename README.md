@@ -17,7 +17,6 @@ A template to create Terraform module Repositories.
 * Local testing with [pre-commit-terraform]
     - Formats code with `terraform fmt`
     - Validates code with `terraform validate`
-    - Static code analysis with [checkov]
     - Static code analysis with [tflint]
     - Static code analysis with [tfsec]
 * [Devcontainer] with all dependencies pre-configured
