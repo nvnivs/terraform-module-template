@@ -23,7 +23,7 @@
         "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
         "ghcr.io/mickeahlinder/devcontainer-features/tfenv:1": {},
         "ghcr.io/dhoeric/features/tfsec:1": {},
-        "ghcr.io/devcontainers/features/terraform:1": {},
+        "ghcr.io/devcontainers/features/terraform:1": {}
     },
     "postStartCommand": "pre-commit install && tfenv install && tfenv use && tflint --init"
 }
