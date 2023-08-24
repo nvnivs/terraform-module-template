@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: terraform-linters/setup-tflint@v3.0.0
+      - uses: terraform-linters/setup-tflint@v3.1.0
       - run: tflint --version
       - run: tflint --init
       - run: tflint -f compact
