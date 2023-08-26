@@ -13,7 +13,7 @@
         "antonbabenko/pre-commit-terraform",
         "pre-commit/pre-commit-hooks",
         "terraform-docs/terraform-docs",
-        "terraform-linters/tflint-ruleset-terraform"      
+        "terraform-linters/tflint-ruleset-terraform",
       ],
       "matchUpdateTypes": [
         "chore",
