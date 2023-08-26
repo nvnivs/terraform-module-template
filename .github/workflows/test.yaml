@@ -58,6 +58,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run JSON Lint
+        # yamllint disable-line rule:line-length
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/json-lint/master/pipeline.sh)
 
   yamllint:
