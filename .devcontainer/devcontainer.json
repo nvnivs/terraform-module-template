@@ -25,5 +25,5 @@
         "ghcr.io/dhoeric/features/tfsec:1": {},
         "ghcr.io/devcontainers/features/terraform:1": {}
     },
-    "postStartCommand": "pre-commit install && tfenv install && tfenv use && tflint --init"
+    "postCreateCommand": "bash .devcontainer/postCreateCommand.sh"
 }
