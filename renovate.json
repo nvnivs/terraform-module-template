@@ -12,6 +12,7 @@
       "matchPackageNames": [
         "antonbabenko/pre-commit-terraform",
         "pre-commit/pre-commit-hooks",
+        "terraform-docs/gh-actions",
         "terraform-docs/terraform-docs",
         "terraform-linters/tflint-ruleset-terraform"
       ],
