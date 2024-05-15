@@ -4,7 +4,8 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "hashicorp.terraform"
+                "hashicorp.terraform",
+                "golang.go"
             ],
             "settings": {
                 "terminal.integrated.profiles.linux": {
