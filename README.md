@@ -1,10 +1,10 @@
 # terraform-module-template
 
-A template to create Terraform module Repositories.
+A template to create Terraform module repositories.
 
 ## Features
 
-* Local testing with [pre-commit-hooks]
+* Commit validation with [pre-commit-hooks]
     - Checks for merge conficts
     - Check `yaml` files syntax
     - Check `json` files syntax
@@ -14,7 +14,7 @@ A template to create Terraform module Repositories.
     - Fixes mixed line endings
     - Blocks commits to `main` branch
     - Fixes trailing whitespace
-* Local testing with [pre-commit-terraform]
+* Commit validation with [pre-commit-terraform]
     - Formats code with `terraform fmt`
     - Validates code with `terraform validate`
     - Static code analysis with [tflint]
@@ -24,6 +24,7 @@ A template to create Terraform module Repositories.
 * Configures [renovate] for dependency management
 * Actions workflow to test PRs
 * Actions workflow to create Github Releases using [semantic-release]
+* Testing using [terratest]
 
 ## Credits
 
@@ -71,5 +72,6 @@ No resources.
 [tfsec]: https://github.com/aquasecurity/tfsec
 [Devcontainer]: https://code.visualstudio.com/docs/devcontainers/containers
 [terraform-docs]: https://github.com/terraform-docs/terraform-docs/
+[terratest]: https://terratest.gruntwork.io/
 [renovate]: https://github.com/renovatebot/renovate
 [semantic-release]: https://github.com/semantic-release/semantic-release
