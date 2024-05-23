@@ -1,7 +1,6 @@
 # terraform-module-template
 
 [![latest release](https://img.shields.io/github/v/release/nvnivs/terraform-module-template?style=flat-square)](https://github.com/nvnivs/terraform-module-template/releases/latest)
-[![build status](https://img.shields.io/github/actions/workflow/status/nvnivs/terraform-module-template/release.yaml?branch=master&logo=github&style=flat-square)](https://github.com/nvnivs/terraform-module-template/actions/workflows/release.yaml)
 
 A template to create Terraform module repositories.
 
