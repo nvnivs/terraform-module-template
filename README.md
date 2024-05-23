@@ -2,35 +2,17 @@
 
 [![latest release](https://img.shields.io/github/v/release/nvnivs/terraform-module-template?style=flat-square)](https://github.com/nvnivs/terraform-module-template/releases/latest)
 
-A template to create Terraform module repositories.
+A template to scaffold Terraform module repositories.
 
-## Features
+## Features ✅
 
-* Commit validation with [pre-commit-hooks]
-    - Checks for merge conficts
-    - Check `yaml` files syntax
-    - Check `json` files syntax
-    - Detects AWS credentials
-    - Detects private keys
-    - Fixes end of files
-    - Fixes mixed line endings
-    - Blocks commits to `main` branch
-    - Fixes trailing whitespace
-* Commit validation with [pre-commit-terraform]
-    - Formats code with `terraform fmt`
-    - Validates code with `terraform validate`
-    - Static code analysis with [tflint]
-    - Static code analysis with [tfsec]
+* Commit validation with [pre-commit-hooks] and [pre-commit-terraform]
+* Static code analysis with [tflint] and [tfsec]
 * [Devcontainer] with all dependencies pre-configured
 * Generates README.md module documentation with [terraform-docs]
 * Configures [renovate] for dependency management
-* Actions workflow to test PRs
-* Actions workflow to create Github Releases using [semantic-release]
+* Actions workflows to test PRs and create Github Releases using [semantic-release]
 * Testing using [terratest]
-
-## Credits
-
-* https://github.com/DontShaveTheYak/terraform-module-template
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
