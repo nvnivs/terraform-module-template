@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pre-commit install
+task pc-init
 tfenv install
 tfenv use
 tflint --init

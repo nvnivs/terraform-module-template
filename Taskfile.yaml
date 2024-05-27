@@ -4,9 +4,22 @@ version: '3'
 includes:
   common:
     taskfile: ./taskfiles/Taskfile.common.yaml
+  pc:
+    taskfile: ./taskfiles/Taskfile.precommit.yaml
 
 tasks:
   default:
     desc: Default task
     cmds:
       - task: common:default
+
+  # pre-commit tasks
+  pc-init:
+    desc: Initializes pre-commit
+    cmds:
+      - task: pc:init
+
+  pc-run:
+    desc: Runs pre-commit
+    cmds:
+      - task: pc:run
