@@ -2,81 +2,81 @@
 name: Test
 
 on:  # yamllint disable-line rule:truthy
-  pull_request:
-    branches: [main]
+    pull_request:
+        branches: [main]
 
 permissions:
-  contents: write
+    contents: write
 
 jobs:
-  init:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Setup
-        uses: hashicorp/setup-terraform@v3
-      - name: Init
-        run: terraform init --upgrade --backend=false
-      - name: Commit
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_options: "--no-verify"
+    init:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Setup
+              uses: hashicorp/setup-terraform@v3
+            - name: Init
+              run: terraform init --upgrade --backend=false
+            - name: Commit
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                  commit_options: --no-verify
 
-  test:
-    runs-on: ubuntu-latest
-    needs: init
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
-        with:
-          go-version-file: tests/go.mod
-          cache-dependency-path: tests/go.sum
-      - name: Test
-        working-directory: tests
-        run: go test
+    test:
+        runs-on: ubuntu-latest
+        needs: init
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-go@v5
+              with:
+                  go-version-file: tests/go.mod
+                  cache-dependency-path: tests/go.sum
+            - name: Test
+              working-directory: tests
+              run: go test
 
-  tflint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: terraform-linters/setup-tflint@v4
-      - run: tflint --version
-      - run: tflint --init
-        env:
+    tflint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: terraform-linters/setup-tflint@v4
+            - run: tflint --version
+            - run: tflint --init
+              env:
           # https://github.com/terraform-linters/tflint/blob/master/docs/user-guide/plugins.md#avoiding-rate-limiting
-          GITHUB_TOKEN: ${{ github.token }}
-      - run: tflint -f compact
+                  GITHUB_TOKEN: ${{ github.token }}
+            - run: tflint -f compact
 
-  tfsec:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: aquasecurity/tfsec-action@v1.0.3
-        with:
-          github_token: ${{ github.token }}
+    tfsec:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: aquasecurity/tfsec-action@v1.0.3
+              with:
+                  github_token: ${{ github.token }}
 
-  docs:
-    runs-on: ubuntu-latest
-    needs: init
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-      - uses: terraform-docs/gh-actions@v1.1.0
-        with:
-          git-push: true
+    docs:
+        runs-on: ubuntu-latest
+        needs: init
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  ref: ${{ github.event.pull_request.head.ref }}
+            - uses: terraform-docs/gh-actions@v1.1.0
+              with:
+                  git-push: true
 
-  jsonlint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Run JSON Lint
+    jsonlint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Run JSON Lint
         # yamllint disable-line rule:line-length
-        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/json-lint/master/pipeline.sh)
+              run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/json-lint/master/pipeline.sh)
 
-  yamllint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v3
+    yamllint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: yaml-lint
+              uses: ibiqlik/action-yamllint@v3

@@ -2,14 +2,14 @@
 version: '3'
 
 tasks:
-  env-init:
-    desc: Initializes tfenv
-    cmds:
-      - tfenv install
-      - tfenv use
+    env-init:
+        desc: Initializes tfenv
+        cmds:
+            - tfenv install
+            - tfenv use
 
-  lint-init:
-    desc: Initializes tflint
-    cmds:
-      - tflint -v
-      - tflint --init
+    lint-init:
+        desc: Initializes tflint
+        cmds:
+            - tflint -v
+            - tflint --init
