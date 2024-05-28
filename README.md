@@ -13,6 +13,7 @@ A template to scaffold Terraform module repositories.
 * Configures [renovate] for dependency management
 * Actions workflows to test PRs and create Github Releases using [semantic-release]
 * Testing using [terratest]
+* [taskfile] to simplify repetitive actions
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -58,3 +59,4 @@ No resources.
 [terratest]: https://terratest.gruntwork.io/
 [renovate]: https://github.com/renovatebot/renovate
 [semantic-release]: https://github.com/semantic-release/semantic-release
+[taskfile]: https://taskfile.dev/
