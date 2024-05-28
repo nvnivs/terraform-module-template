@@ -7,3 +7,9 @@ tasks:
     cmds:
     - tfenv install
     - tfenv use
+
+  lint-init:
+    desc: Initializes tflint
+    cmds:
+    - tflint -v
+    - tflint --init
