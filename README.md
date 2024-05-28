@@ -51,7 +51,6 @@ No resources.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [pre-commit-hooks]: https://pre-commit.com/
 [pre-commit-terraform]: https://github.com/antonbabenko/pre-commit-terraform
-[checkov]: https://github.com/bridgecrewio/checkov
 [tflint]: https://github.com/terraform-linters/tflint
 [tfsec]: https://github.com/aquasecurity/tfsec
 [Devcontainer]: https://code.visualstudio.com/docs/devcontainers/containers
