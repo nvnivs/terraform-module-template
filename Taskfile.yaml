@@ -2,12 +2,10 @@
 version: '3'
 
 includes:
-    common:
-        taskfile: ./taskfiles/Taskfile.common.yaml
-    pc:
-        taskfile: ./taskfiles/Taskfile.precommit.yaml
-    tf:
-        taskfile: ./taskfiles/Taskfile.terraform.yaml
+    common: ./taskfiles/Taskfile.common.yaml
+    go: ./taskfiles/Taskfile.golang.yaml
+    pc: ./taskfiles/Taskfile.precommit.yaml
+    tf: ./taskfiles/Taskfile.terraform.yaml
 
 tasks:
     default:

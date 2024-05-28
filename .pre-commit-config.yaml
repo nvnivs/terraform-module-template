@@ -13,6 +13,27 @@ repos:
           - id: terraform_tflint
           - id: terraform_tfsec
 
+    - repo: https://github.com/dnephin/pre-commit-golang
+      rev: v0.5.1
+      hooks:
+          - id: go-fmt
+            files: ^tests/(.*/)*.*\.go$
+          - id: go-mod-tidy
+            files: ^tests/(.*/)*.*\.go$
+
+    - repo: https://github.com/golangci/golangci-lint
+      rev: v1.56.2
+      hooks:
+          - id: golangci-lint
+            entry: >
+                sh -c 'find tests -type f -name "go.mod" -print0 |
+                xargs -0 -I{} sh -c "module_dir=\$(dirname {}); \
+                root_dir=\$(git rev-parse --show-toplevel); \
+                echo \"Running golangci-lint in \$module_dir\";
+                (cd \$module_dir && golangci-lint run ./...)" || \
+                echo "Skipping, no go.mod found"'
+            language: system
+
     - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
       rev: 0.2.3
       hooks:
