@@ -1,0 +1,35 @@
+---
+version: '3'
+
+vars:
+    mod: '{{.mod | default "tests"}}'
+
+tasks:
+    tidy:
+        desc: Tidies go modules
+        cmds:
+            - cd {{.mod}} && go mod tidy
+
+    fmt:
+        desc: Formats go modules
+        cmds:
+            - cd {{.mod}} && go fmt -x ./...
+
+    vet:
+        desc: Runs go vet to report on suspicious constructs
+        cmds:
+            - cd {{.mod}} && go vet ./...
+
+    lint:
+        desc: Lints go code
+        cmds:
+            - cd {{.mod}} && golangci-lint run -v -E gofmt
+
+    style:
+        desc: Runs -> fmt, vet, lint
+        deps: [fmt, vet, lint]
+
+    test:
+        desc: Runs tests
+        cmds:
+            - cd {{.mod}} && go test -race -v ./...
