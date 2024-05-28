@@ -1,31 +1,31 @@
 {
-    "name": "${localWorkspaceFolderBasename}",
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "hashicorp.terraform",
-                "golang.go"
-            ],
-            "settings": {
-                "terminal.integrated.profiles.linux": {
-                    "zsh": {
-                        "path": "/usr/bin/zsh"
-                    }
-                },
-                "terminal.integrated.defaultProfile.linux": "zsh",
-                "[terraform]": {
-                    "editor.formatOnSave": true
-                }
-            }
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform",
+        "golang.go"
+      ],
+      "settings": {
+        "[terraform]": {
+          "editor.formatOnSave": true
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/usr/bin/zsh"
+          }
         }
-    },
-    "features": {
-        "ghcr.io/devcontainers/features/terraform:1": {},
-        "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
-        "ghcr.io/dhoeric/features/tfsec:1": {},
-        "ghcr.io/eitsupi/devcontainer-features/go-task:latest": {},
-        "ghcr.io/mickeahlinder/devcontainer-features/tfenv:1": {}
-    },
-    "postCreateCommand": "bash .devcontainer/postCreateCommand.sh"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
+    "ghcr.io/devcontainers/features/terraform:1": {},
+    "ghcr.io/dhoeric/features/tfsec:1": {},
+    "ghcr.io/eitsupi/devcontainer-features/go-task:latest": {},
+    "ghcr.io/mickeahlinder/devcontainer-features/tfenv:1": {}
+  },
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "name": "${localWorkspaceFolderBasename}",
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh"
 }
