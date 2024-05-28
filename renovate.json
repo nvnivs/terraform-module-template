@@ -4,11 +4,9 @@
     "config:base",
     ":semanticCommits"
   ],
-  "pre-commit": {
-    "enabled": true
-  },
   "packageRules": [
     {
+      "automerge": true,
       "matchPackageNames": [
         "antonbabenko/pre-commit-terraform",
         "pre-commit/pre-commit-hooks",
@@ -20,8 +18,10 @@
         "chore",
         "minor",
         "patch"
-      ],
-      "automerge": true
+      ]
     }
-  ]
+  ],
+  "pre-commit": {
+    "enabled": true
+  }
 }

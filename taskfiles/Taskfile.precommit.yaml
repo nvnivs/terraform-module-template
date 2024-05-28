@@ -2,16 +2,16 @@
 version: '3'
 
 tasks:
-  init:
-    desc: Initialize pre-commit and install hooks
-    cmds:
-      - pre-commit install
+    init:
+        desc: Initialize pre-commit and install hooks
+        cmds:
+            - pre-commit install
 
-  run:
-    desc: Runs pre-commit on all files
-    cmds:
-      - |
-        pre-commit run --all-files \
-          --color always \
-          --show-diff-on-failure \
-          {{.CLI_ARGS}}
+    run:
+        desc: Runs pre-commit on all files
+        cmds:
+            - |
+              pre-commit run --all-files \
+                --color always \
+                --show-diff-on-failure \
+                {{.CLI_ARGS}}

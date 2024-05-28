@@ -2,9 +2,9 @@
 version: '3'
 
 tasks:
-  default:
-    desc: Prints list of tasks
-    cmds:
-      - echo "Running default task."
-      - echo "Use 'task NAME --summary' for details on a specific task."
-      - task --list-all
+    default:
+        desc: Prints list of tasks
+        cmds:
+            - echo "Running default task."
+            - echo "Use 'task NAME --summary' for details on a specific task."
+            - task --list-all

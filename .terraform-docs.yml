@@ -1,9 +1,9 @@
 ---
-formatter: "markdown"
+formatter: markdown
 
 output:
-  file: README.md
-  mode: inject
+    file: README.md
+    mode: inject
 
 recursive:
-  enabled: true
+    enabled: true
