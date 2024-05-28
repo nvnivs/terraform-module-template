@@ -1,0 +1,9 @@
+---
+version: '3'
+
+tasks:
+  env-init:
+    desc: Initializes tfenv
+    cmds:
+    - tfenv install
+    - tfenv use

@@ -6,6 +6,8 @@ includes:
     taskfile: ./taskfiles/Taskfile.common.yaml
   pc:
     taskfile: ./taskfiles/Taskfile.precommit.yaml
+  tf:
+    taskfile: ./taskfiles/Taskfile.terraform.yaml
 
 tasks:
   default:

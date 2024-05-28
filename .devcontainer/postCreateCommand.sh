@@ -1,7 +1,6 @@
 #!/bin/bash
 
 task pc-init
-tfenv install
-tfenv use
+task tf:env-init
 tflint --init
 sed -i 's/plugins=(git)/plugins=(git terraform)/g' ~/.zshrc

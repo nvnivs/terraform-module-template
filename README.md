@@ -14,6 +14,7 @@ A template to scaffold Terraform module repositories.
 * Actions workflows to test PRs and create Github Releases using [semantic-release]
 * Testing using [terratest]
 * [taskfile] to simplify repetitive actions
+* Sets terraform version with [tfenv], configurable in `.terraform-version`
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -60,3 +61,4 @@ No resources.
 [renovate]: https://github.com/renovatebot/renovate
 [semantic-release]: https://github.com/semantic-release/semantic-release
 [taskfile]: https://taskfile.dev/
+[tfenv]: https://github.com/tfutils/tfenv
