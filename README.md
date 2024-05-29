@@ -1,6 +1,7 @@
 # terraform-module-template
 
-[![latest release](https://img.shields.io/github/v/release/nvnivs/terraform-module-template?style=flat-square)](https://github.com/nvnivs/terraform-module-template/releases/latest)
+[![Latest][version-shield]][release-url]
+[![License][license-shield]][license-url]
 
 A template to scaffold Terraform module repositories.
 
@@ -54,6 +55,10 @@ No resources.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[version-shield]: https://img.shields.io/github/v/release/nvnivs/terraform-module-template?style=flat-square
+[release-url]: https://github.com/nvnivs/terraform-module-template/releases/latest
+[license-shield]: https://img.shields.io/github/license/nvnivs/terraform-module-template.svg?style=flat-square
+[license-url]: https://github.com/nvnivs/terraform-module-template/blob/main/LICENSE
 [pre-commit-hooks]: https://pre-commit.com/
 [pre-commit-terraform]: https://github.com/antonbabenko/pre-commit-terraform
 [tflint]: https://github.com/terraform-linters/tflint
