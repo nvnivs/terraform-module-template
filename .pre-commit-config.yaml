@@ -59,7 +59,7 @@ repos:
           - id: trailing-whitespace
 
     - repo: https://github.com/terraform-docs/terraform-docs
-      rev: v0.17.0
+      rev: v0.18.0
       hooks:
           - id: terraform-docs-go
             args: [.]
