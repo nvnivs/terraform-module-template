@@ -7,7 +7,7 @@ A template to scaffold Terraform module repositories.
 
 ## Template features ✅
 
-This sections describes the features provided by this template. It should be replaced with the features provided by the module for repos generated with the template.
+This section describes the features provided by this template. It should be replaced with the features provided by the module for repositories generated with the template.
 
 * Commit validation with [pre-commit-hooks] and [pre-commit-terraform]
 * Static code analysis with [tflint], configurable with `.tflint.hcl`
@@ -15,7 +15,7 @@ This sections describes the features provided by this template. It should be rep
 * [Devcontainer] with all dependencies pre-configured
 * Generates README.md module documentation with [terraform-docs]
 * Configures [renovate] for dependency management
-* Actions workflows to test PRs and create Github Releases using [semantic-release]
+* Actions workflows to test PRs and create GitHub Releases using [semantic-release]
 * Testing using [terratest]
 * [taskfile] to simplify repetitive actions
 * Sets terraform version with [tfenv], configurable with `.terraform-version`
