@@ -9,6 +9,7 @@
       "automerge": true,
       "matchPackageNames": [
         "antonbabenko/pre-commit-terraform",
+        "golangci/golangci-lint",
         "pre-commit/pre-commit-hooks",
         "terraform-docs/gh-actions",
         "terraform-docs/terraform-docs",
