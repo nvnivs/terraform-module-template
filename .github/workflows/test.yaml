@@ -27,6 +27,7 @@ jobs:
         needs: init
         steps:
             - uses: actions/checkout@v4
+            - uses: hashicorp/setup-terraform@v3
             - uses: actions/setup-go@v5
               with:
                   go-version-file: tests/go.mod
