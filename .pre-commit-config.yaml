@@ -22,7 +22,7 @@ repos:
             files: ^tests/(.*/)*.*\.go$
 
     - repo: https://github.com/golangci/golangci-lint
-      rev: v1.64.8
+      rev: v2.0.1
       hooks:
           - id: golangci-lint
             entry: >
