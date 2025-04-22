@@ -26,7 +26,7 @@ This section describes the features provided by this template. It should be repl
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13, < 2.0.0 |
-| <a name="requirement_null"></a> [null](#requirement\_null) | 3.2.3 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | 3.2.4 |
 
 ## Providers
 
