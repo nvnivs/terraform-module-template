@@ -18,7 +18,7 @@ jobs:
             - name: Init
               run: terraform init --upgrade --backend=false
             - name: Commit
-              uses: stefanzweifel/git-auto-commit-action@v5
+              uses: stefanzweifel/git-auto-commit-action@v6
               with:
                   commit_options: --no-verify
 
