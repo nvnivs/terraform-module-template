@@ -40,7 +40,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - uses: terraform-linters/setup-tflint@v4
+            - uses: terraform-linters/setup-tflint@v5
             - run: tflint --version
             - run: tflint --init
               env:
