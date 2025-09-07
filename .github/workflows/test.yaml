@@ -28,7 +28,7 @@ jobs:
         steps:
             - uses: actions/checkout@v5
             - uses: hashicorp/setup-terraform@v3
-            - uses: actions/setup-go@v5
+            - uses: actions/setup-go@v6
               with:
                   go-version-file: tests/go.mod
                   cache-dependency-path: tests/go.sum
