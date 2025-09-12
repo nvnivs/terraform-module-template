@@ -25,7 +25,7 @@
     "ghcr.io/eitsupi/devcontainer-features/go-task:latest": {},
     "ghcr.io/mickeahlinder/devcontainer-features/tfenv:1": {}
   },
-  "image": "mcr.microsoft.com/devcontainers/universal:3",
+  "image": "mcr.microsoft.com/devcontainers/universal:4",
   "name": "${localWorkspaceFolderBasename}",
   "postCreateCommand": "bash .devcontainer/postCreateCommand.sh"
 }
