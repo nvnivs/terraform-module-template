@@ -4,10 +4,19 @@
     "config:base",
     ":semanticCommits"
   ],
-  "managerFilePatterns": [
-    "/(^|/)tests/go\\.mod$/"
-  ],
   "packageRules": [
+    {
+      "groupName": "Go dependencies",
+      "groupSlug": "go-deps",
+      "matchFiles": [
+        "go.mod",
+        "go.sum"
+      ],
+      "postUpdateOptions": [
+        "gomodTidy"
+      ],
+      "matchBaseBranches": ["main"]
+    },
     {
       "automerge": true,
       "matchPackageNames": [
