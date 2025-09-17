@@ -4,11 +4,9 @@
     "config:base",
     ":semanticCommits"
   ],
-  "go": {
-    "managerFilePatterns": [
-      "/(^|/)tests/go\\.mod$/"
-    ]
-  },
+  "managerFilePatterns": [
+    "/(^|/)tests/go\\.mod$/"
+  ],
   "packageRules": [
     {
       "automerge": true,
