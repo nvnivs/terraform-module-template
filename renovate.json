@@ -6,11 +6,10 @@
   ],
   "packageRules": [
     {
-      "groupName": "Go dependencies",
-      "groupSlug": "go-deps",
+      "matchLanguages": ["golang"],
       "matchFiles": [
-        "go.mod",
-        "go.sum"
+        "tests/go.mod",
+        "tests/go.sum"
       ],
       "postUpdateOptions": [
         "gomodTidy"
