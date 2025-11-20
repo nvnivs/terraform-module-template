@@ -12,7 +12,7 @@ jobs:
     init:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v5
+            - uses: actions/checkout@v6
             - name: Setup
               uses: hashicorp/setup-terraform@v3
             - name: Init
@@ -26,7 +26,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: init
         steps:
-            - uses: actions/checkout@v5
+            - uses: actions/checkout@v6
             - uses: hashicorp/setup-terraform@v3
             - uses: actions/setup-go@v6
               with:
@@ -39,7 +39,7 @@ jobs:
     tflint:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v5
+            - uses: actions/checkout@v6
             - uses: terraform-linters/setup-tflint@v6
             - run: tflint --version
             - run: tflint --init
@@ -51,7 +51,7 @@ jobs:
     tfsec:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v5
+            - uses: actions/checkout@v6
             - uses: aquasecurity/tfsec-action@v1.0.3
               with:
                   github_token: ${{ github.token }}
@@ -60,7 +60,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: init
         steps:
-            - uses: actions/checkout@v5
+            - uses: actions/checkout@v6
               with:
                   ref: ${{ github.event.pull_request.head.ref }}
             - uses: terraform-docs/gh-actions@v1.4.1
@@ -70,7 +70,7 @@ jobs:
     jsonlint:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v5
+            - uses: actions/checkout@v6
             - name: Run JSON Lint
         # yamllint disable-line rule:line-length
               run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/json-lint/master/pipeline.sh)
@@ -78,6 +78,6 @@ jobs:
     yamllint:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v5
+            - uses: actions/checkout@v6
             - name: yaml-lint
               uses: ibiqlik/action-yamllint@v3
