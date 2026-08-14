@@ -3,7 +3,7 @@ terraform {
     # Example of requiring a provider
     null = {
       source  = "hashicorp/null"
-      version = "3.3.0"
+      version = "3.3.1"
     }
   }
 
